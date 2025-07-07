@@ -147,7 +147,7 @@ function App() {
               <div className="relative">
                 <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-8 border-white">
                   <img 
-                    src="/assets/shime.png?auto=compress&cs=tinysrgb&w=800" 
+                    src="../dist/assets/shime.png?auto=compress&cs=tinysrgb&w=800" 
                     alt="Shimelis Techane" 
                     className="w-full h-full object-cover"
                   />
