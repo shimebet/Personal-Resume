@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, Phone, MapPin, Linkedin as LinkedIn, Github, Calendar, GraduationCap, Award, Code, Cloud, Server, Globe, Download, User, BookOpen, Target, Menu, X } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin as LinkedIn, Github, Calendar, GraduationCap, Award, Code, Cloud, Server, Globe, Download, User, BookOpen, Target, Menu, X, GitBranchPlusIcon } from 'lucide-react';
+import profileImage from '../dist/assets/shime.png';
+
+<img 
+  src={profileImage} 
+  alt="Shimelis Techane" 
+  className="w-full h-full object-cover"
+/>
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -146,12 +153,13 @@ function App() {
             <div className={`order-1 lg:order-2 flex justify-center transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <div className="relative">
                 <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-8 border-white">
+  
                   <img 
-                    src="../dist/assets/shime.png?auto=compress&cs=tinysrgb&w=800" 
-                    alt="Shimelis Techane" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                  src={profileImage} 
+                  alt="Shimelis Techane" 
+                  className="w-full h-full object-cover"
+                />
+               </div>
                 <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg">
                   <Code size={24} className="text-gray-800" />
                 </div>
@@ -468,9 +476,10 @@ function App() {
               <div className="space-y-6">
                 {[
                   { icon: Mail, color: 'blue', title: 'Email', value: 'shimelis.techane@email.com' },
-                  { icon: Phone, color: 'green', title: 'Phone', value: '+251 911 234 567' },
+                  { icon: Phone, color: 'green', title: 'Phone', value: '+251 910 750 228' },
                   { icon: MapPin, color: 'purple', title: 'Location', value: 'Addis Ababa, Ethiopia' },
-                  { icon: LinkedIn, color: 'blue', title: 'LinkedIn', value: 'linkedin.com/in/shimelis-techane' }
+                  { icon: LinkedIn, color: 'blue', title: 'LinkedIn', value: 'https://www.linkedin.com/in/shimelis-techane-137338183/' },
+                  { icon: GitBranchPlusIcon, color: 'blue', title: 'GitHub', value: 'https://github.com/shimebet' }
                 ].map((contact, index) => (
                   <div key={index} className="flex items-center space-x-4 lg:space-x-6">
                     <div className={`w-12 h-12 lg:w-14 lg:h-14 bg-${contact.color}-100 rounded-xl flex items-center justify-center`}>
@@ -542,7 +551,7 @@ function App() {
           </div>
           <div className="border-t border-gray-800 mt-6 lg:mt-8 pt-6 lg:pt-8 text-center">
             <p className="text-gray-400 text-sm lg:text-base">
-              © 2024 Shimelis Techane. All rights reserved. Built with React & Tailwind CSS.
+              © 2024 Shimelis Techane. All rights reserved.
             </p>
           </div>
         </div>
