@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Linkedin as LinkedIn, Github, Calendar, GraduationCap, Award, Code, Cloud, Server, Globe, Download, User, BookOpen, Target, Menu, X, GitBranchPlusIcon } from 'lucide-react';
-import profileImage from './assets/shime.png';
 
-<img 
-  src={profileImage} 
-  alt="Shimelis Techane" 
-  className="w-full h-full object-cover"
-/>
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
