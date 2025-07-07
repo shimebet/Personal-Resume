@@ -153,11 +153,12 @@ function App() {
             <div className={`order-1 lg:order-2 flex justify-center transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <div className="relative">
                 <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-8 border-white">
-                  <img 
-                    src="../dist/assets/shime.png?auto=compress&cs=tinysrgb&w=800" 
-                    alt="Shimelis Techane" 
-                    className="w-full h-full object-cover"
-                  />
+<img 
+  src="/assets/shime.png" 
+  alt="Shimelis Techane" 
+  className="w-full h-full object-cover"
+/>
+
                   
                 </div>
                 <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg">
